@@ -1,9 +1,17 @@
 @import "jekyll-theme-minimal";
 
-/* Custom styles for social media icons */
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px; /* Space between icons */
+}
+
 .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    display: inline-block;
+    width: 24px;    /* Icon width */
+    height: 24px;   /* Icon height */
+    display: inline-block; /* Align icons horizontally */
+    vertical-align: middle;
 }
