@@ -1,4 +1,9 @@
----
----
-
 @import "jekyll-theme-minimal";
+
+/* Custom styles for social media icons */
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+}
