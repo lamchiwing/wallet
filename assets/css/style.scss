@@ -10,8 +10,9 @@
 }
 
 .social-icons img {
-    width: 24px;    /* Icon width */
-    height: 24px;   /* Icon height */
-    display: inline-block; /* Align icons horizontally */
-    vertical-align: middle;
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+    margin-right: 10px; /* Add spacing between icons */
+    display: inline-block;
+    vertical-align: middle; /* Align icons with text */
 }
