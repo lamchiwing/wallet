@@ -40,6 +40,18 @@
       <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
     </a>
   </div>
-  <p><small>本站專注於足球預測分析，托管於 GitHub Pages &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-</footer>
+
+   {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+         <p><small>本站專注於足球預測分析，托管於 GitHub Pages &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
 
