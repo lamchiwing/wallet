@@ -41,6 +41,9 @@
     }
   </style>
 </head>
+  <body>
+  <div class="table-container">
+    <table border="1">
         <tr>
           <th>週數</th>
           <th>當地比賽日期及時間</th>
