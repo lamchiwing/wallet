@@ -15,9 +15,13 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
 
       .wrapper {
+        flex: 1; /* 讓內容區域自動填滿頁面 */
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -58,10 +62,13 @@
       /* 底部 */
       footer {
         width: 100%;
-        margin-top: 20px;
+        background-color: #f8f8f8;
         text-align: center;
         font-size: 0.9em;
         color: #666;
+        padding: 10px 0;
+        margin-top: auto; /* 確保頁腳固定在頁面底部 */
+        border-top: 1px solid #ddd;
       }
     </style>
   </head>
@@ -95,7 +102,7 @@
       </div>
     </div>
 
-    <!-- 底部 -->
+    <!-- 固定到底部的頁腳 -->
     <footer>
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
