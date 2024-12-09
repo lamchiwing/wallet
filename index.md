@@ -43,19 +43,22 @@
 </head>
 <body>
   <div class="table-container">
-    <table border="1">
-      <tr>
-        <th>週數</th>
-        <th>當地比賽日期及時間</th>
-        <th>主隊</th>
-        <th>客隊</th>
-        <th>預測賽果</th>
-        <th>勝出隊伍</th>
-        <th>入球大細：細  >2.5球< 大</th>
-        <th>主隊賽果</th>
-        <th>客隊賽果</th>
-        <th>場地</th>
-      </tr>
+    <table>
+      <thead>
+        <tr>
+          <th>週數</th>
+          <th>當地比賽日期及時間</th>
+          <th>主隊</th>
+          <th>客隊</th>
+          <th>預測賽果</th>
+          <th>勝出隊伍</th>
+          <th>入球大細：細 >2.5球< 大</th>
+          <th>主隊賽果</th>
+          <th>客隊賽果</th>
+          <th>場地</th>
+        </tr>
+      </thead>
+      <tbody>
       <tr>
         <td>第14週</td>
         <td>2024-12-04</td>
