@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>比賽預測表</title>
   <style>
     table {
       border-collapse: collapse;
@@ -44,10 +41,6 @@
     }
   </style>
 </head>
-<body>
-  <div class="table-container">
-    <table>
-      <thead>
         <tr>
           <th>週數</th>
           <th>當地比賽日期及時間</th>
