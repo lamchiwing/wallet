@@ -28,12 +28,25 @@
       .header-left {
         flex: 1;
         max-width: 30%; /* 調整左側區域寬度 */
+        text-align: center;
       }
 
       .header-left img {
         display: block;
         max-width: 100%;
-        margin-bottom: 20px;
+        margin: 0 auto 20px; /* 上方對齊且增加下方間距 */
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
       }
 
       /* 右側：內容區域 */
@@ -42,25 +55,13 @@
         max-width: 70%; /* 調整右側區域寬度 */
       }
 
-      /* 底部社交媒體圖標 */
+      /* 底部 */
       footer {
         width: 100%;
         margin-top: 20px;
         text-align: center;
         font-size: 0.9em;
         color: #666;
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 20px;
-      }
-
-      .social-icons img {
-        width: 24px;
-        height: 24px;
       }
     </style>
   </head>
@@ -71,6 +72,21 @@
         {% if site.logo %}
           <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
         {% endif %}
+        <!-- 社交媒體圖標 -->
+        <div class="social-icons">
+          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+            <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+            <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
+          </a>
+          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+            <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
+          </a>
+          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+            <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
+          </a>
+        </div>
       </div>
 
       <!-- 右側：index.md 的內容 -->
@@ -83,22 +99,6 @@
     <footer>
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-
-      <!-- 社交媒體圖標 -->
-      <div class="social-icons">
-        <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-          <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
-        </a>
-        <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-          <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
-        </a>
-        <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-          <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
-        </a>
-        <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-          <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
-        </a>
-      </div>
     </footer>
 
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
