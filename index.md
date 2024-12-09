@@ -62,11 +62,11 @@
         <td>葉士域治</td>
         <td>水晶宮</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>水晶宮</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>樸文路球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -74,11 +74,11 @@
         <td>李斯特城</td>
         <td>韋斯咸</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>李斯特城</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>王權球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -86,11 +86,11 @@
         <td>愛華頓</td>
         <td>狼隊</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>愛華頓</td>
+        <td>大</td>
+        <td>4</td>
+        <td>0</td>
+        <td>葛迪遜公園球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -98,11 +98,11 @@
         <td>曼城</td>
         <td>諾定咸森林</td>
         <td><a href="https://www.youtube.com/watch?v=gcwEx5pErQs" target="_blank">查看預測賽果</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>曼城</td>
+        <td>大</td>
+        <td>3</td>
+        <td>0</td>
+        <td>伊蒂哈德球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -110,11 +110,11 @@
         <td>紐卡素</td>
         <td>利物浦</td>
         <td><a href="https://www.youtube.com/watch?v=nab9Qgfjyo0" target="_blank">查看預測賽果</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>和</td>
+        <td>大</td>
+        <td>3</td>
+        <td>3</td>
+        <td>聖占士公園球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -122,11 +122,11 @@
         <td>修咸頓</td>
         <td>車路士</td>
         <td><a href="https://youtu.be/n5LI84OLi7U?si=rUVyFaUSvEaeThfN" target="_blank">查看預測賽果</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>車路士</td>
+        <td>大</td>
+        <td>1</td>
+        <td>5</td>
+        <td>聖瑪麗體育場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -134,11 +134,11 @@
         <td>阿仙奴</td>
         <td>曼聯</td>
         <td><a href="https://www.youtube.com/watch?v=49o4MIbNpf0" target="_blank">查看預測賽果</a></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>阿仙奴</td>
+        <td>細</td>
+        <td>2</td>
+        <td>0</td>
+        <td>酋長球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -146,11 +146,11 @@
         <td>阿士東維拉</td>
         <td>賓福特</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>阿士東維拉</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>維拉公園球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -158,11 +158,11 @@
         <td>富咸</td>
         <td>白禮頓</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>富咸</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>卡雲農舍球場</td>
       </tr>
       <tr>
         <td>第14週</td>
@@ -170,11 +170,11 @@
         <td>般尼茅夫</td>
         <td>熱刺</td>
         <td>查看預測賽果</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>般尼茅夫</td>
+        <td>細</td>
+        <td>1</td>
+        <td>0</td>
+        <td>活力球場</td>
       </tr>
       <tr>
         <td>第13週</td>
@@ -1231,12 +1231,514 @@
         <td>1</td>
         <td>熱刺球場</td>
       </tr>
+            <tr>
+        <th>第5週</th>
+        <th>2024-09-21</th>
+        <th>阿士東維拉</th>
+        <th>狼隊</th>
+        <th><a href="https://youtu.be/hZSkkTOJiaw?si=Cqr3vzeoo41j8KWC" target="_blank">查看預測賽果</a></th>
+        <th>阿士東維拉</th>
+        <th>大</th>
+        <th>3</th>
+        <th>1</th>
+        <th>維拉公園球場</th>
+      </tr>
       <tr>
         <td>第5週</td>
         <td>2024-09-21</td>
-        <td>阿士東維拉</td>
+        <td>韋斯咸</td>
+        <td>車路士</td>
+        <td><a href="https://youtu.be/3LPeYmsJQ2g?si=0dr91s8-SgVMRejc" target="_blank">查看預測賽果</a></td>
+        <td>車路士</td>
+        <td>大</td>
+        <td>0</td>
+        <td>3</td>
+        <td>倫敦體育場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-16</td>
         <td>狼隊</td>
-        <td><a href="https://youtu.be/hZSkkTOJiaw?si=Cqr3vzeoo41j8KWC" target="_blank">查看預測賽果</a></td>
+        <td>紐卡素</td>
+        <td><a href="https://youtu.be/O6XvrvPBtTI?si=yfXd__z1dYY-OxVb" target="_blank">查看預測賽果</a></td>
+        <td>紐卡素</td>
+        <td>大</td>
+        <td>1</td>
+        <td>2</td>
+        <td>摩連納斯球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-15</td>
+        <td>熱刺</td>
+        <td>阿仙奴</td>
+        <td><a href="https://youtu.be/GQ_lG7whI4Y?si=KCUR3caj6EpZjUvV" target="_blank">查看預測賽果</a></td>
+        <td>阿仙奴</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>熱刺球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-15</td>
+        <td>般尼茅夫</td>
+        <td>車路士</td>
+        <td><a href="https://youtu.be/Nz7bwXJMVT0?si=R9ctzn09w8a7oAqn" target="_blank">查看預測賽果</a></td>
+        <td>車路士</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>活力球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-15</td>
+        <td>阿士東維拉</td>
+        <td>愛華頓</td>
+        <td><a href="https://youtu.be/Mo-bzS4tqkU?si=MwaTdmMF6ESSAEtX" target="_blank">查看預測賽果</a></td>
         <td>阿士東維拉</td>
         <td>大</td>
-        <td>3</td></tr></tr></table></div></body></html>
+        <td>3</td>
+        <td>2</td>
+        <td>維拉公園球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>利物浦</td>
+        <td>諾定咸森林</td>
+        <td>查看預測賽果</td>
+        <td>諾定咸森林</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>晏菲路球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>富咸</td>
+        <td>韋斯咸</td>
+        <td>查看預測賽果</td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>卡雲農舍球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>曼城</td>
+        <td>賓福特</td>
+        <td><a href="https://youtu.be/QNo2aAId5dc?si=ZSGcb0DyiIIaugId" target="_blank">查看預測賽果</a></td>
+        <td>曼城</td>
+        <td>大</td>
+        <td>2</td>
+        <td>1</td>
+        <td>伊蒂哈德球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>水晶宮</td>
+        <td>李斯特城</td>
+        <td>查看預測賽果</td>
+        <td>和</td>
+        <td>大</td>
+        <td>2</td>
+        <td>2</td>
+        <td>施靴斯公園球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>白禮頓</td>
+        <td>葉士域治</td>
+        <td>查看預測賽果</td>
+        <td>和</td>
+        <td>細</td>
+        <td>0</td>
+        <td>0</td>
+        <td>美國運通社區球場</td>
+      </tr>
+      <tr>
+        <td>第4週</td>
+        <td>2024-09-14</td>
+        <td>修咸頓</td>
+        <td>曼聯</td>
+        <td>查看預測賽果</td>
+        <td>曼聯</td>
+        <td>大</td>
+        <td>0</td>
+        <td>3</td>
+        <td>聖瑪麗體育場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-09-02</td>
+        <td>曼聯</td>
+        <td>利物浦</td>
+        <td><a href="https://youtu.be/E3ewHspIgtI?si=n2O8H8KN2FcBYeeb" target="_blank">查看預測賽果</a></td>
+        <td>利物浦</td>
+        <td>大</td>
+        <td>0</td>
+        <td>3</td>
+        <td>奧脫福球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-09-01</td>
+        <td>紐卡素</td>
+        <td>熱刺</td>
+        <td><a href="https://youtu.be/lW3dVXA4mnE?si=lHsD6vlZ89zV-YDj" target="_blank">查看預測賽果</a></td>
+        <td>紐卡素</td>
+        <td>大</td>
+        <td>2</td>
+        <td>1</td>
+        <td>聖占士公園球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-09-01</td>
+        <td>車路士</td>
+        <td>水晶宮</td>
+        <td><a href="https://youtu.be/6K0aofeNBy8?si=LDWC1SWkRp_CkCfF" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>史丹福橋球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-09-01</td>
+        <td>韋斯咸</td>
+        <td>曼城</td>
+        <td><a href="https://youtu.be/a0bVn8X6LqQ?si=u3x-jNf_qDWZZ20O" target="_blank">查看預測賽果</a></td>
+        <td>曼城</td>
+        <td>大</td>
+        <td>1</td>
+        <td>3</td>
+        <td>倫敦體育場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>愛華頓</td>
+        <td>般尼茅夫</td>
+        <td><a href="https://youtu.be/3nyOTf2zpWA?si=REa5RfPGfSyjnQNT" target="_blank">查看預測賽果</a></td>
+        <td>般尼茅夫</td>
+        <td>大</td>
+        <td>2</td>
+        <td>3</td>
+        <td>葛迪遜公園球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>李斯特城</td>
+        <td>阿士東維拉</td>
+        <td>查看預測賽果</td>
+        <td>阿士東維拉</td>
+        <td>大</td>
+        <td>1</td>
+        <td>2</td>
+        <td>王權球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>葉士域治</td>
+        <td>富咸</td>
+        <td>查看預測賽果</td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>樸文路球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>諾定咸森林</td>
+        <td>狼隊</td>
+        <td><a href="https://youtu.be/3T7uQF-3aIU?si=9WxgwDvuc60upsOM" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>城市球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>賓福特</td>
+        <td>修咸頓</td>
+        <td>查看預測賽果</td>
+        <td>賓福特</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>社區球場</td>
+      </tr>
+      <tr>
+        <td>第3週</td>
+        <td>2024-08-31</td>
+        <td>阿仙奴</td>
+        <td>白禮頓</td>
+        <td><a href="https://youtu.be/3JbZG5U5-HE?si=ZqVEi-Nryr9ClXhT" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>酋長球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-26</td>
+        <td>利物浦</td>
+        <td>賓福特</td>
+        <td><a href="https://youtu.be/7jnf5DAwUBE?si=kHUqSqedE172e9wg" target="_blank">查看預測賽果</a></td>
+        <td>利物浦</td>
+        <td>細</td>
+        <td>2</td>
+        <td>0</td>
+        <td>晏菲路球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-25</td>
+        <td>狼隊</td>
+        <td>車路士</td>
+        <td><a href="https://youtu.be/am_RTKgAX1k?si=efNMEfDgAxUVQY0g" target="_blank">查看預測賽果</a></td>
+        <td>車路士</td>
+        <td>大</td>
+        <td>2</td>
+        <td>6</td>
+        <td>摩連納斯球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-25</td>
+        <td>般尼茅夫</td>
+        <td>紐卡素</td>
+        <td><a href="https://youtu.be/v2E-P6EAV7I?si=9CTQ5S1wHSuQA8Kw" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>活力球場</td>
+      </tr>
+      <tr>
+         <tr>
+        <th>第2週</th>
+        <th>2024-08-25</th>
+        <th>阿士東維拉</th>
+        <th>阿仙奴</th>
+        <th><a href="https://youtu.be/eM3ziAo297M?si=83LZe7SJkl9feuvq" target="_blank">查看預測賽果</a></th>
+        <th>阿仙奴</th>
+        <th>細</th>
+        <th>0</th>
+        <th>2</th>
+        <th>維拉公園球場</th>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>修咸頓</td>
+        <td>諾定咸森林</td>
+        <td>查看預測賽果</td>
+        <td>諾定咸森林</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>聖瑪麗體育場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>富咸</td>
+        <td>李斯特城</td>
+        <td>查看預測賽果</td>
+        <td>富咸</td>
+        <td>大</td>
+        <td>2</td>
+        <td>1</td>
+        <td>卡雲農舍球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>曼城</td>
+        <td>葉士域治</td>
+        <td>查看預測賽果</td>
+        <td>曼城</td>
+        <td>大</td>
+        <td>4</td>
+        <td>1</td>
+        <td>伊蒂哈德球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>水晶宮</td>
+        <td>韋斯咸</td>
+        <td><a href="https://youtu.be/p2WI6VOhEcA?si=DmWois16nHLAol2F" target="_blank">查看預測賽果</a></td>
+        <td>韋斯咸</td>
+        <td>細</td>
+        <td>0</td>
+        <td>2</td>
+        <td>施靴斯公園球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>熱刺</td>
+        <td>愛華頓</td>
+        <td><a href="https://youtu.be/fwfU91aZPQk?si=sRpMLD4U2Zyly5F8" target="_blank">查看預測賽果</a></td>
+        <td>熱刺</td>
+        <td>大</td>
+        <td>4</td>
+        <td>0</td>
+        <td>熱刺球場</td>
+      </tr>
+      <tr>
+        <td>第2週</td>
+        <td>2024-08-24</td>
+        <td>白禮頓</td>
+        <td>曼聯</td>
+        <td><a href="https://youtu.be/FCx0yzsZGcg?si=azor7wN-OJscZh-7" target="_blank">查看預測賽果</a></td>
+        <td>白禮頓</td>
+        <td>大</td>
+        <td>2</td>
+        <td>1</td>
+        <td>美國運通社區球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-20</td>
+        <td>李斯特城</td>
+        <td>熱刺</td>
+        <td>查看預測賽果</td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>王權球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-19</td>
+        <td>車路士</td>
+        <td>曼城</td>
+        <td><a href="https://youtu.be/8bBOmDRHRu0?si=rP44HJ7pQc4GPNPf" target="_blank">查看預測賽果</a></td>
+        <td>曼城</td>
+        <td>細</td>
+        <td>0</td>
+        <td>2</td>
+        <td>史丹福橋球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-18</td>
+        <td>賓福特</td>
+        <td>水晶宮</td>
+        <td><a href="https://youtu.be/LnBCRJLHgHA?si=ydonipU-ch8d8mmy" target="_blank">查看預測賽果</a></td>
+        <td>賓福特</td>
+        <td>大</td>
+        <td>2</td>
+        <td>1</td>
+        <td>社區球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-18</td>
+        <td>韋斯咸</td>
+        <td>阿士東維拉</td>
+        <td><a href="https://youtu.be/TljCGTR7dH0?si=o2QbEDWpmSO228mz" target="_blank">查看預測賽果</a></td>
+        <td>阿士東維拉</td>
+        <td>大</td>
+        <td>1</td>
+        <td>2</td>
+        <td>倫敦體育場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>愛華頓</td>
+        <td>白禮頓</td>
+        <td><a href="https://youtu.be/dS7oL-TH_r8?si=_PaAx_HUwmG_tD2_" target="_blank">查看預測賽果</a></td>
+        <td>白禮頓</td>
+        <td>大</td>
+        <td>0</td>
+        <td>3</td>
+        <td>葛迪遜公園球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>紐卡素</td>
+        <td>修咸頓</td>
+        <td>查看預測賽果</td>
+        <td>紐卡素</td>
+        <td>細</td>
+        <td>1</td>
+        <td>0</td>
+        <td>聖占士公園球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>諾定咸森林</td>
+        <td>般尼茅夫</td>
+        <td><a href="https://youtu.be/K4EpAazddBI?si=6n5dPxV-GLjAGO-h" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>細</td>
+        <td>1</td>
+        <td>1</td>
+        <td>城市球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>阿仙奴</td>
+        <td>狼隊</td>
+        <td><a href="https://youtu.be/UVPSV6kG5bE?si=9F1WElWmEAkyYwxe" target="_blank">查看預測賽果</a></td>
+        <td>阿仙奴</td>
+        <td>細</td>
+        <td>2</td>
+        <td>0</td>
+        <td>酋長球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>葉士域治</td>
+        <td>利物浦</td>
+        <td>查看預測賽果</td>
+        <td>利物浦</td>
+        <td>細</td>
+        <td>0</td>
+        <td>2</td>
+        <td>樸文路球場</td>
+      </tr>
+      <tr>
+        <td>第1週</td>
+        <td>2024-08-17</td>
+        <td>曼聯</td>
+        <td>富咸</td>
+        <td><a href="https://youtu.be/7D8ShLtyR9E?si=clOvaiPflT5HUeXX" target="_blank">查看預測賽果</a></td>
+        <td>曼聯</td>
+        <td>細</td>
+        <td>1</td>
+        <td>0</td>
+        <td>奧脫福球場</td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+</html>
+  
