@@ -12,71 +12,66 @@
     <![endif]-->
     {% include head-custom.html %}
     <style>
-      .footer-wrapper {
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
         flex-wrap: wrap;
-        padding-top: 20px; /* 提高整體位置 */
+        align-items: flex-start;
+        padding: 20px;
       }
 
-      .footer-left {
-        max-width: 45%;
+      /* 左側區域（Logo + 社交媒體圖標） */
+      .left-side {
+        flex: 1;
+        max-width: 40%; /* 左側占比，可調整 */
+        padding-right: 20px;
       }
 
-      .footer-left img {
+      .left-side img {
         display: block;
-        margin-bottom: 10px;
+        max-width: 100%; /* 確保響應式顯示 */
+        margin-bottom: 20px;
       }
 
       .social-icons {
         display: flex;
-        justify-content: flex-start;
-        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
       }
 
-      .social-icons a {
-        margin-right: 10px;
-      }
-
-      .social-icons img {
+      .social-icons a img {
         width: 24px;
         height: 24px;
       }
 
-      .footer-right {
-        max-width: 50%;
-        text-align: right;
+      /* 右側區域（index.md 的內容） */
+      .right-side {
+        flex: 2;
+        max-width: 60%; /* 右側占比，可調整 */
       }
 
-      .content-container {
+      /* 整體佈局控制 */
+      footer {
         margin-top: 20px;
-        padding: 10px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #666;
       }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-      </header>
-
-      <footer>
-        <div class="footer-wrapper">
-          <!-- 左側內容 -->
-          <div class="footer-left">
-            {% if site.logo %}
-              <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
-            {% endif %}
-          </div>
-
-          <!-- 右側內容 -->
-          <div class="footer-right content-container">
-            {{ content }} <!-- index.md 的內容 -->
-          </div>
-        </div>
-
-        <!-- 底部橫排社交媒體圖標 -->
+      <!-- 左側：Logo 和社交媒體圖標 -->
+      <div class="left-side">
+        {% if site.logo %}
+          <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
+        {% endif %}
         <div class="social-icons">
           <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
             <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
@@ -91,13 +86,16 @@
             <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
           </a>
         </div>
+      </div>
 
-        <!-- 備註與信息 -->
-        <div class="footer-note">
-          <p><small>本站專注於足球預測分析，托管於 GitHub Pages（<a href="https://github.com/lamchiwing/wallet">lamchiwing / wallet</a>） &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-        </div>
-      </footer>
+      <!-- 右側：index.md 文件內容 -->
+      <div class="right-side">
+        {{ content }}
+      </div>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
+    <footer>
+      <p><small>本站專注於足球預測分析，托管於 GitHub Pages（<a href="https://github.com/lamchiwing/wallet">lamchiwing / wallet</a>） &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
   </body>
 </html>
