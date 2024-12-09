@@ -5,53 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    <style>
+      .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .footer-left {
+        max-width: 45%; /* 可根據需要調整 */
+      }
+
+      .footer-left img {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .footer-right {
+        max-width: 50%; /* 可根據需要調整 */
+        text-align: right;
+      }
+
+      .social-icons a {
+        margin-right: 10px;
+      }
+
+      .social-icons img {
+        width: 24px; /* 調整圖標大小 */
+        height: 24px;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      </header>
 
-        {% if site.logo %}
-          <img src="{{"/assets/logo/God.png" | relative_url}}" alt="Logo" />
-        {% endif %}
-
-
-
-</section>
-<footer>
-  <p>訂閱我們 <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY">YouTube </a>賽前預測</p>
-  <div class="social-icons">
-    <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-      <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
-    </a>
-    <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-      <img src="{{ "assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
-    </a>
-    <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-      <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
-    </a>
-    <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-      <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
-    </a>
-  </div>
-
-   {{ content }}
-
-      </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-         <p><small>本站專注於足球預測分析，托管於 GitHub Pages &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            {% if site.logo %}
+              <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
+            {% endif %}
+            <div class="social-icons">
+              <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+                <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
+              </a>
+              <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+                <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
+              </a>
+              <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+                <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
+              </a>
+              <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+                <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p>訂閱我們 <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY">YouTube </a>賽前預測</p>
+            <p><small>本站專注於足球預測分析，托管於 GitHub Pages（<a href="https://github.com/lamchiwing/wallet">lamchiwing / wallet</a>） &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
-
