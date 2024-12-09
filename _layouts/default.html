@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "zh-HK" }}">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,8 @@
     {% include head-custom.html %}
     <style>
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;
+        font-family: Arial, sans-serif;
       }
 
       .wrapper {
@@ -25,77 +24,83 @@
         padding: 20px;
       }
 
-      /* 左側區域（Logo + 社交媒體圖標） */
-      .left-side {
+      /* 左側：Logo 區域 */
+      .header-left {
         flex: 1;
-        max-width: 40%; /* 左側占比，可調整 */
-        padding-right: 20px;
+        max-width: 30%; /* 調整左側區域寬度 */
       }
 
-      .left-side img {
+      .header-left img {
         display: block;
-        max-width: 100%; /* 確保響應式顯示 */
+        max-width: 100%;
         margin-bottom: 20px;
       }
 
-      .social-icons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-      .social-icons a img {
-        width: 24px;
-        height: 24px;
-      }
-
-      /* 右側區域（index.md 的內容） */
-      .right-side {
+      /* 右側：內容區域 */
+      .content-right {
         flex: 2;
-        max-width: 60%; /* 右側占比，可調整 */
+        max-width: 70%; /* 調整右側區域寬度 */
       }
 
-      /* 整體佈局控制 */
+      /* 底部社交媒體圖標 */
       footer {
+        width: 100%;
         margin-top: 20px;
         text-align: center;
         font-size: 0.9em;
         color: #666;
       }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <!-- 左側：Logo 和社交媒體圖標 -->
-      <div class="left-side">
+      <!-- 左側：Logo -->
+      <div class="header-left">
         {% if site.logo %}
-          <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
+          <img src="{{ site.logo | relative_url }}" alt="Logo" />
         {% endif %}
-        <div class="social-icons">
-          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-            <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
-          </a>
-          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-            <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
-          </a>
-          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-            <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
-          </a>
-          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-            <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
-          </a>
-        </div>
       </div>
 
-      <!-- 右側：index.md 文件內容 -->
-      <div class="right-side">
+      <!-- 右側：index.md 的內容 -->
+      <div class="content-right">
         {{ content }}
       </div>
     </div>
 
+    <!-- 底部 -->
     <footer>
-      <p><small>本站專注於足球預測分析，托管於 GitHub Pages（<a href="https://github.com/lamchiwing/wallet">lamchiwing / wallet</a>） &mdash; 主題來源於 <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <!-- 社交媒體圖標 -->
+      <div class="social-icons">
+        <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+          <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
+        </a>
+        <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+          <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
+        </a>
+        <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+          <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
+        </a>
+        <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+          <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
+        </a>
+      </div>
     </footer>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
 </html>
