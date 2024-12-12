@@ -1,148 +1,71 @@
-# 第14週 英超賽程表與預測
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Save The Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .menu {
+            margin: 20px;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>God Save The Wallet</h1>
+    </header>
 
-以下是最新的英超賽程表及預測賽果，包含主隊與客隊的對戰資訊及相關連結。
-
-<div class="table-container">
-  <table border="1">
-    <thead>
-      <tr>
-        <th>週數</th>
-        <th>當地比賽日期及時間</th>
-        <th>主隊</th>
-        <th>客隊</th>
-        <th>預測賽果</th>
-        <th>勝出隊伍</th>
-        <th>入球大細：細 >2.5球< 大</th>
-        <th>主隊賽果</th>
-        <th>客隊賽果</th>
-        <th>場地</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-04</td>
-        <td>葉士域治</td>
-        <td>水晶宮</td>
-        <td>-</td>
-        <td>水晶宮</td>
-        <td>細</td>
-        <td>0</td>
-        <td>1</td>
-        <td>樸文路球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-04</td>
-        <td>李斯特城</td>
-        <td>韋斯咸</td>
-        <td>-</td>
-        <td>李斯特城</td>
-        <td>大</td>
-        <td>3</td>
-        <td>1</td>
-        <td>王權球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>愛華頓</td>
-        <td>狼隊</td>
-        <td>-</td>
-        <td>愛華頓</td>
-        <td>大</td>
-        <td>4</td>
-        <td>0</td>
-        <td>葛迪遜公園球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>曼城</td>
-        <td>諾定咸森林</td>
-        <td><a href="https://www.youtube.com/watch?v=gcwEx5pErQs" target="_blank">查看預測賽果</a></td>
-        <td>曼城</td>
-        <td>大</td>
-        <td>3</td>
-        <td>0</td>
-        <td>伊蒂哈德球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>紐卡素</td>
-        <td>利物浦</td>
-        <td><a href="https://www.youtube.com/watch?v=nab9Qgfjyo0" target="_blank">查看預測賽果</a></td>
-        <td>和</td>
-        <td>大</td>
-        <td>3</td>
-        <td>3</td>
-        <td>聖占士公園球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>修咸頓</td>
-        <td>車路士</td>
-        <td><a href="https://youtu.be/n5LI84OLi7U?si=rUVyFaUSvEaeThfN" target="_blank">查看預測賽果</a></td>
-        <td>車路士</td>
-        <td>大</td>
-        <td>1</td>
-        <td>5</td>
-        <td>聖瑪麗體育場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>阿仙奴</td>
-        <td>曼聯</td>
-        <td><a href="https://www.youtube.com/watch?v=49o4MIbNpf0" target="_blank">查看預測賽果</a></td>
-        <td>阿仙奴</td>
-        <td>細</td>
-        <td>2</td>
-        <td>0</td>
-        <td>酋長球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-05</td>
-        <td>阿士東維拉</td>
-        <td>賓福特</td>
-        <td>-</td>
-        <td>阿士東維拉</td>
-        <td>大</td>
-        <td>3</td>
-        <td>1</td>
-        <td>維拉公園球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-06</td>
-        <td>富咸</td>
-        <td>白禮頓</td>
-        <td>-</td>
-        <td>富咸</td>
-        <td>大</td>
-        <td>3</td>
-        <td>1</td>
-        <td>卡雲農舍球場</td>
-      </tr>
-      <tr>
-        <td>第14週</td>
-        <td>2024-12-06</td>
-        <td>般尼茅夫</td>
-        <td>熱刺</td>
-        <td>-</td>
-        <td>般尼茅夫</td>
-        <td>細</td>
-        <td>1</td>
-        <td>0</td>
-        <td>活力球場</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-* * *
-
-如需更多比賽分析與最新資訊，請持續關注！
+    <div class="menu">
+        <h2>Change Matchweek</h2>
+        <div class="dropdown">
+            <button>Matchweek 4</button>
+            <div class="dropdown-content">
+                <a href="#">第1周 (14 Sep - 15 Sep)</a>
+                <a href="#">第2周 (21 Sep - 22 Sep)</a>
+                <a href="#">第3周 (28 Sep - 29 Sep)</a>
+                <a href="#">第4周 (5 Oct - 6 Oct)</a>
+                <!-- Add more weeks as necessary -->
+                <a href="#">第38周</a>
+            </div>
+        </div>
+        <p>Fan Polls</p>
+    </div>
+</body>
+</html>
