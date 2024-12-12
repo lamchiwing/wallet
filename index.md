@@ -12,14 +12,14 @@
             background-color: #f9f9f9;
         }
         header {
-            background-color: #fabe00;
+            background-color: #f9f9f9;
             color: white;
             padding: 10px 20px;
             text-align: center;
         }
         .menu {
             margin: 20px;
-            text-align: center;
+            text-align: right;
         }
         .dropdown {
             position: relative;
