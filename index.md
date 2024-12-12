@@ -49,11 +49,11 @@
 </head>
 <body>
     <header>
-        <h1>God Save The Wallet</h1>
+        <h1>數據足球</h1>
     </header>
 
     <div class="menu">
-        <h2>Change Matchweek</h2>
+        <h2>各周數賽程</h2>
         <div class="dropdown">
             <button>Matchweek 4</button>
             <div class="dropdown-content">
