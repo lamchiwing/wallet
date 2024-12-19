@@ -52,20 +52,26 @@
         <h1>數據足球</h1>
     </header>
 
-    <div class="menu">
-        <h2>各周數賽程</h2>
+     <div class="menu">
+        <h2>選擇周數</h2>
         <div class="dropdown">
-            <button>Matchweek 4</button>
+            <button>Matchweek</button>
             <div class="dropdown-content">
-                <a href="#">第1周 (14 Sep - 15 Sep)</a>
-                <a href="#">第2周 (21 Sep - 22 Sep)</a>
-                <a href="#">第3周 (28 Sep - 29 Sep)</a>
-                <a href="#">第4周 (5 Oct - 6 Oct)</a>
-                <!-- Add more weeks as necessary -->
-                <a href="#">第38周</a>
+                <a href="#" onclick="showContent(5)">第5周 (21 Sep - 23 Sep)</a>
+                <a href="#" onclick="showContent(6)">第6周 (28 Sep - 01 Oct)</a>
+                <a href="#" onclick="showContent(7)">第7周 (05 Oct - 07 Oct)</a>
+                <a href="#" onclick="showContent(8)">第8周 (19 Oct - 22 Oct)</a>
+                <a href="#" onclick="showContent(9)">第9周 (26 Oct - 28 Oct)</a>  
+                <a href="#" onclick="showContent(10)">第10周 (01 Nov - 05 Nov)</a>
+                <a href="#" onclick="showContent(11)">第11周 (10 Nov - 11 Nov)</a>
+                <a href="#" onclick="showContent(12)">第12周 (23 Nov - 26 Nov)</a>
+                <a href="#" onclick="showContent(13)">第13周 (30 Nov - 02 Dec)</a>
+                <a href="#" onclick="showContent(14)">第14周 (03 Dec - 05 Dec)</a>
+                <a href="#" onclick="showContent(15)">第15周 (07 Dec - 09 Dec)</a>
+                <a href="#" onclick="showContent(16)">第16周 (14 Dec - 16 Dec)</a>
+                <a href="#" onclick="showContent(17)">第17周 (21 Dec - 22 Dec)</a>
             </div>
         </div>
-        <p>Fan Polls</p>
     </div>
 </body>
 </html>
