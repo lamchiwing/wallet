@@ -1,113 +1,164 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+<html lang="zh-HK">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Save The Wallet</title>
     <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      .wrapper {
-        flex: 1; /* 讓內容區域自動填滿頁面 */
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding: 20px;
-      }
-
-      /* 左側：Logo 區域 */
-      .header-left {
-        flex: 1;
-        max-width: 30%; /* 調整左側區域寬度 */
-        text-align: center;
-      }
-
-      .header-left img {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto 20px; /* 上方對齊且增加下方間距 */
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 10px;
-      }
-
-      .social-icons img {
-        width: 24px;
-        height: 24px;
-      }
-
-      /* 右側：內容區域 */
-      .content-right {
-        flex: 2;
-        max-width: 70%; /* 調整右側區域寬度 */
-      }
-
-      /* 底部 */
-      footer {
-        width: 100%;
-        background-color: #f8f8f8;
-        text-align: center;
-        font-size: 0.9em;
-        color: #666;
-        padding: 10px 0;
-        margin-top: auto; /* 確保頁腳固定在頁面底部 */
-        border-top: 1px solid #ddd;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .menu {
+            margin: 20px;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content.hidden {
+            display: none;
+        }
     </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- 左側：Logo -->
-      <div class="header-left">
-        {% if site.logo %}
-          <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
-        {% endif %}
-        <!-- 社交媒體圖標 -->
-        <div class="social-icons">
-          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-            <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
-          </a>
-          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-            <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
-          </a>
-          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-            <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
-          </a>
-          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-            <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
-          </a>
-        </div>
-      </div>
+    <script>
+        function showContent(week) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(`week-${week}`).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>God Save The Wallet</h1>
+    </header>
 
-      <!-- 右側：index.md 的內容 -->
-      <div class="content-right">
-        {{ content }}
-      </div>
+    <div class="menu">
+        <h2>Change Matchweek</h2>
+        <div class="dropdown">
+            <button>Matchweek</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showContent(5)">第5周 (21 Sep - 23 Sep)</a>
+                <a href="#" onclick="showContent(6)">第6周 (28 Sep - 01 Oct)</a>
+                <a href="#" onclick="showContent(7)">第7周 (05 Oct - 07 Oct)</a>
+                <a href="#" onclick="showContent(8)">第8周 (19 Oct - 22 Oct)</a>
+                <a href="#" onclick="showContent(9)">第9周 (26 Oct - 28 Oct)</a>  
+                <a href="#" onclick="showContent(10)">第10周 (01 Nov - 05 Nov)</a>
+                <a href="#" onclick="showContent(11)">第11周 (10 Nov - 11 Nov)</a>
+                <a href="#" onclick="showContent(12)">第12周 (23 Nov - 26 Nov)</a>
+                <a href="#" onclick="showContent(13)">第13周 (30 Nov - 02 Dec)</a>
+                <a href="#" onclick="showContent(14)">第14周 (03 Dec - 05 Dec)</a>
+                <a href="#" onclick="showContent(15)">第15周 (07 Dec - 09 Dec)</a>
+                <a href="#" onclick="showContent(16)">第16周 (14 Dec - 16 Dec)</a>
+                <a href="#" onclick="showContent(17)">第17周 (21 Dec - 22 Dec)</a>
+            </div>
+        </div>
+        <p>Fan Polls</p>
     </div>
 
-    <!-- 固定到底部的頁腳 -->
-    <footer>
-      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-    </footer>
+    <!-- Week Contents -->
+    <div id="week-5" class="content">
+        <h3>第5周 英超</h3>
+        <p賽前預測</p>
+    </div>
 
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+    <div id="week-6" class="content hidden">
+        <h3>第6周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+    <div id="week-7" class="content hidden">
+        <h3>第7周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+    <div id="week-8" class="content hidden">
+        <h3>第8周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+     <div id="week-9" class="content hidden">
+        <h3>第9周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+   <div id="week-10" class="content hidden">
+        <h3>第10周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+    <div id="week-11" class="content hidden">
+        <h3>第11周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+     <div id="week-12" class="content hidden">
+        <h3>第12周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+     <div id="week-13" class="content hidden">
+        <h3>第13周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+     <div id="week-14" class="content hidden">
+        <h3>第14周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+       <div id="week-15" class="content hidden">
+        <h3>第15周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+       <div id="week-16" class="content hidden">
+        <h3>第16周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+
+       <div id="week-17" class="content hidden">
+        <h3>第17周 Content</h3>
+        <p>賽前預測</p>
+    </div>
+</body>
 </html>
