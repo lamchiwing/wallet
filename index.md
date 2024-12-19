@@ -12,7 +12,7 @@
             background-color: #f9f9f9;
         }
         header {
-            background-color: #4CAF50; /* Updated for better visibility */
+            background-color: #f9f9f9; /* Updated for better visibility */
             color: white;
             padding: 10px 20px;
             text-align: center;
@@ -27,14 +27,14 @@
         }
         .dropdown button {
             cursor: pointer;
-            background-color: #4CAF50;
+            background-color: #f9f9f9;
             color: white;
             border: none;
             padding: 10px 15px;
             font-size: 16px;
         }
         .dropdown button:hover {
-            background-color: #45a049;
+            background-color: #f9f9f9;
         }
         .dropdown-content {
             display: none;
