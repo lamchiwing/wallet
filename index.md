@@ -39,7 +39,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #ffffff;
+            background-color: #c7c7c7;;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             min-width: 160px;
             z-index: 1;
