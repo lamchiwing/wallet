@@ -52,7 +52,7 @@
             display: block;
         }
         .dropdown-content a:hover {
-            background-color: #f1f1f1;
+            background-color: #c7c7c7;
             cursor: pointer;
         }
         .dropdown:hover .dropdown-content {
