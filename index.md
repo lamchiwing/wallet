@@ -34,7 +34,7 @@
             font-size: 16px;
         }
         .dropdown button:hover {
-            background-color: #f9f9f9;
+            background-color: #c7c7c7;
         }
         .dropdown-content {
             display: none;
