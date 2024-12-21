@@ -21,24 +21,23 @@
       }
 
       .wrapper {
-        flex: 1; /* 讓內容區域自動填滿頁面 */
+        flex: 1;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         padding: 20px;
       }
 
-      /* 左側：Logo 區域 */
       .header-left {
         flex: 1;
-        max-width: 30%; /* 調整左側區域寬度 */
+        max-width: 30%;
         text-align: center;
       }
 
       .header-left img {
         display: block;
         max-width: 100%;
-        margin: 0 auto 20px; /* 上方對齊且增加下方間距 */
+        margin: 0 auto 20px;
       }
 
       .social-icons {
@@ -53,13 +52,11 @@
         height: 24px;
       }
 
-      /* 右側：內容區域 */
       .content-right {
         flex: 2;
-        max-width: 70%; /* 調整右側區域寬度 */
+        max-width: 70%;
       }
 
-      /* 底部 */
       footer {
         width: 100%;
         background-color: #f8f8f8;
@@ -67,7 +64,7 @@
         font-size: 0.9em;
         color: #666;
         padding: 10px 0;
-        margin-top: auto; /* 確保頁腳固定在頁面底部 */
+        margin-top: auto;
         border-top: 1px solid #ddd;
       }
     </style>
@@ -96,13 +93,19 @@
         </div>
       </div>
 
-      <!-- 右側：index.md 的內容 -->
+      <!-- 右側：內容 -->
       <div class="content-right">
-        {{ content }}
+        <h1>精準足球賽事預測與分析</h1>
+        <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
+        <ul>
+          <li>詳細的比賽數據趨勢</li>
+          <li>專家級的賽果預測</li>
+          <li>實時更新的球隊表現指標</li>
+        </ul>
+        <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
       </div>
     </div>
 
-    <!-- 固定到底部的頁腳 -->
     <footer>
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
