@@ -27,8 +27,8 @@
         }
         .dropdown button {
             cursor: pointer;
-            background-color: #f9f9f9;
-            color: white;
+            background-color: #424242;
+            color: gray;
             border: none;
             padding: 10px 15px;
             font-size: 16px;
