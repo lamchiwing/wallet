@@ -64,8 +64,7 @@
             alert("You selected Week " + weekNumber);
             // Add functionality to dynamically display content for the selected week
         }
-    </script>
-</head>
+ </head>
 <body>
     <header>
         <h1>數據足球</h1>
@@ -73,8 +72,8 @@
 
     <div class="menu">
         <h2>選擇周數</h2>
-        <div class="dropdown">
-            <button aria-label="各周賽程及預測">各周賽程及預測</button>
+        <div class="dropdown" aria-label="各周賽程及預測">
+            <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
             <div class="dropdown-content" role="menu">
                 <a href="#" onclick="showContent(5)" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
                 <a href="#" onclick="showContent(6)" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
@@ -85,12 +84,14 @@
                 <a href="#" onclick="showContent(11)" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
                 <a href="#" onclick="showContent(12)" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
                 <a href="#" onclick="showContent(13)" role="menuitem">第13周 (30 Nov - 02 Dec)</a>
-                <a href="_layouts/week14" onclick="showContent(14)" role="menuitem">第14周 (03 Dec - 05 Dec)</a>
+                <a href="#" onclick="showContent(14)" role="menuitem">第14周 (03 Dec - 05 Dec)</a>
                 <a href="#" onclick="showContent(15)" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
                 <a href="#" onclick="showContent(16)" role="menuitem">第16周 (14 Dec - 16 Dec)</a>
                 <a href="#" onclick="showContent(17)" role="menuitem">第17周 (21 Dec - 22 Dec)</a>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
