@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
@@ -25,49 +24,49 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
         padding: 20px;
+        position: relative;
+      }
+
+      .header-left {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        text-align: center;
+      }
+
+      .header-left img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 20px;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .content {
+        text-align: center;
+        max-width: 800px;
+        margin-top: 150px;
       }
 
       .menu {
         position: absolute;
         top: 20px;
         right: 20px;
-        text-align: right;
       }
 
-      .menu h2 {
-        margin: 0 0 10px 0;
-      }
-
-      .dropdown button {
-        padding: 10px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #f1f1f1;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
+      .dropdown {
+        margin-bottom: 20px;
       }
 
       footer {
@@ -80,52 +79,67 @@
         margin-top: auto;
         border-top: 1px solid #ddd;
       }
-
-      h1 {
-        margin-bottom: 20px;
-      }
-
-      p {
-        margin: 10px 0;
-      }
     </style>
   </head>
   <body>
-    <div class="menu">
-      <h2>選擇周數</h2>
-      <div class="dropdown" aria-label="各周賽程及預測">
-        <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
-        <div class="dropdown-content" role="menu">
-          <a href="#" onclick="showContent(5)" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
-          <a href="#" onclick="showContent(6)" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
-          <a href="#" onclick="showContent(7)" role="menuitem">第7周 (05 Oct - 07 Oct)</a>
-          <a href="#" onclick="showContent(8)" role="menuitem">第8周 (19 Oct - 22 Oct)</a>
-          <a href="#" onclick="showContent(9)" role="menuitem">第9周 (26 Oct - 28 Oct)</a>
-          <a href="#" onclick="showContent(10)" role="menuitem">第10周 (01 Nov - 05 Nov)</a>
-          <a href="#" onclick="showContent(11)" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
-          <a href="#" onclick="showContent(12)" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
-          <a href="#" onclick="showContent(13)" role="menuitem">第13周 (30 Nov - 02 Dec)</a>
-          <a href="#" onclick="showContent(14)" role="menuitem">第14周 (03 Dec - 05 Dec)</a>
-          <a href="#" onclick="showContent(15)" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
-          <a href="#" onclick="showContent(16)" role="menuitem">第16周 (14 Dec - 16 Dec)</a>
-          <a href="#" onclick="showContent(17)" role="menuitem">第17周 (21 Dec - 22 Dec)</a>
+    <div class="wrapper">
+      <!-- 左側：Logo -->
+      <div class="header-left">
+        {% if site.logo %}
+          <img src="{{ "/assets/logo/God.png" | relative_url }}" alt="Logo" />
+        {% endif %}
+        <!-- 社交媒體圖標 -->
+        <div class="social-icons">
+          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+            <img src="{{ "/assets/Icon/YT.png" | relative_url }}" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+            <img src="{{ "/assets/Icon/IG.png" | relative_url }}" alt="Instagram" />
+          </a>
+          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+            <img src="{{ "/assets/Icon/TD.png" | relative_url }}" alt="Threads" />
+          </a>
+          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+            <img src="{{ "/assets/Icon/FB.png" | relative_url }}" alt="Facebook" />
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="wrapper">
-      <h1>精準足球賽事預測與分析</h1>
-      <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
-      <ul>
-        <li>詳細的比賽數據趨勢</li>
-        <li>專家級的賽果預測</li>
-        <li>實時更新的球隊表現指標</li>
-      </ul>
-      <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
-
-      <div id="dynamic-content">
-        {{ content }}
+      <!-- 頁面內容 -->
+      <div class="content">
+        <h1>精準足球賽事預測與分析</h1>
+        <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
+        <ul>
+          <li>詳細的比賽數據趨勢</li>
+          <li>專家級的賽果預測</li>
+          <li>實時更新的球隊表現指標</li>
+        </ul>
+        <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
       </div>
+
+      <!-- 選單 -->
+      <div class="menu">
+        <h2>選擇周數</h2>
+        <div class="dropdown" aria-label="各周賽程及預測">
+          <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
+          <div class="dropdown-content" role="menu">
+            <a href="#" onclick="showContent(5)" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
+            <a href="#" onclick="showContent(6)" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
+            <a href="#" onclick="showContent(7)" role="menuitem">第7周 (05 Oct - 07 Oct)</a>
+            <a href="#" onclick="showContent(8)" role="menuitem">第8周 (19 Oct - 22 Oct)</a>
+            <a href="#" onclick="showContent(9)" role="menuitem">第9周 (26 Oct - 28 Oct)</a>
+            <a href="#" onclick="showContent(10)" role="menuitem">第10周 (01 Nov - 05 Nov)</a>
+            <a href="#" onclick="showContent(11)" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
+            <a href="#" onclick="showContent(12)" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
+            <a href="#" onclick="showContent(13)" role="menuitem">第13周 (30 Nov - 02 Dec)</a>
+            <a href="#" onclick="showContent(14)" role="menuitem">第14周 (03 Dec - 05 Dec)</a>
+            <a href="#" onclick="showContent(15)" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
+            <a href="#" onclick="showContent(16)" role="menuitem">第16周 (14 Dec - 16 Dec)</a>
+            <a href="#" onclick="showContent(17)" role="menuitem">第17周 (21 Dec - 22 Dec)</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer>
@@ -134,23 +148,10 @@
     </footer>
 
     <script>
-      document.getElementById('path-select').addEventListener('change', function () {
-        const selectedPath = this.value;
-        const dynamicContent = document.getElementById('dynamic-content');
-
-        fetch(selectedPath)
-          .then(response => {
-            if (!response.ok) throw new Error('Network response was not ok');
-            return response.text();
-          })
-          .then(data => {
-            dynamicContent.innerHTML = data;
-          })
-          .catch(error => {
-            dynamicContent.innerHTML = '<p>內容加載失敗，請稍後再試。</p>';
-            console.error('Error fetching content:', error);
-          });
-      });
+      function showContent(week) {
+        console.log(`Displaying content for week ${week}`);
+        // Implement content switching logic here.
+      }
     </script>
   </body>
 </html>
