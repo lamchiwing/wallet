@@ -57,6 +57,10 @@
         max-width: 70%;
       }
 
+      .dropdown {
+        margin-bottom: 20px;
+      }
+
       footer {
         width: 100%;
         background-color: #f8f8f8;
@@ -95,6 +99,16 @@
 
       <!-- 右側：index.md 的內容 -->
       <div class="content-right">
+        <!-- 下拉選單 -->
+        <div class="dropdown">
+          <label for="path-select">選擇內容路徑：</label>
+          <select id="path-select">
+            <option value="index.md">主內容</option>
+            <option value="path1.md">路徑 1</option>
+            <option value="path2.md">路徑 2</option>
+          </select>
+        </div>
+
         <!-- 靜態添加內容 -->
         <h1>精準足球賽事預測與分析</h1>
         <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
@@ -104,9 +118,11 @@
           <li>實時更新的球隊表現指標</li>
         </ul>
         <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
-        
-        <!-- 動態載入 index.md 內容 -->
-        {{ content }}
+
+        <!-- 動態內容 -->
+        <div id="dynamic-content">
+          {{ content }}
+        </div>
       </div>
     </div>
 
@@ -115,6 +131,24 @@
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
 
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      document.getElementById('path-select').addEventListener('change', function () {
+        const selectedPath = this.value;
+        const dynamicContent = document.getElementById('dynamic-content');
+        
+        fetch(selectedPath)
+          .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.text();
+          })
+          .then(data => {
+            dynamicContent.innerHTML = data;
+          })
+          .catch(error => {
+            dynamicContent.innerHTML = '<p>內容加載失敗，請稍後再試。</p>';
+            console.error('Error fetching content:', error);
+          });
+      });
+    </script>
   </body>
 </html>
