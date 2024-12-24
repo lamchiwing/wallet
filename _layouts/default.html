@@ -57,6 +57,53 @@
         max-width: 70%;
       }
 
+      nav {
+        background-color: #333;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        position: relative;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        display: block;
+      }
+
+      nav ul li a:hover {
+        background-color: #575757;
+      }
+
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #444;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li:hover ul {
+        display: block;
+      }
+
+      nav ul li ul li {
+        margin: 0;
+      }
+
       footer {
         width: 100%;
         background-color: #f8f8f8;
@@ -71,6 +118,23 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- Navigation Menu -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#analysis">Analysis</a>
+            <ul>
+              <li><a href="#team-stats">Team Stats</a></li>
+              <li><a href="#match-history">Match History</a></li>
+              <li><a href="#predictions">Predictions</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
       <!-- 左側：Logo -->
       <div class="header-left">
         {% if site.logo %}
@@ -95,16 +159,8 @@
 
       <!-- 右側：index.md 的內容 -->
       <div class="content-right">
-        <!-- 靜態添加內容 -->
         <h1>精準足球賽事預測與分析</h1>
-        <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
-        <ul>
-          <li>詳細的比賽數據趨勢</li>
-          <li>專家級的賽果預測</li>
-          <li>實時更新的球隊表現指標</li>
-        </ul>
-        <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
-        
+        <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析。</p>
         <!-- 動態載入 index.md 內容 -->
         {{ content }}
       </div>
