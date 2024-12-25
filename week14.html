@@ -5,46 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>第14週</title>
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-left img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px auto;
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
       margin: 0 auto;
     }
+
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: center;
     }
+
     th {
       background-color: #f2f2f2;
     }
-    .table-container {
-      width: 100%;
-      overflow-x: auto;
-    }
+
     @media only screen and (max-width: 600px) {
       th, td {
         font-size: 12px;
         padding: 6px;
       }
-      table {
-        width: 100%;
-        display: block;
-      }
-    }
-    @media only screen and (max-width: 768px) {
-      th, td {
-        font-size: 14px;
-        padding: 8px;
-      }
-      table {
-        width: 100%;
-        display: block;
-      }
     }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-left">
+        <img src="assets/logo/God.png" alt="Logo">
+      </div>
+      <div class="menu">
+        <div class="dropdown">
+          <button>各周賽程及預測</button>
+          <div class="dropdown-content">
+            <a href="#">第5週 (21 Sep - 23 Sep)</a>
+            <a href="#">第6週 (28 Sep - 01 Oct)</a>
+            <a href="#">第7週 (05 Oct - 07 Oct)</a>
+            <a href="#">第8週 (19 Oct - 22 Oct)</a>
+            <a href="#">第9週 (26 Oct - 28 Oct)</a>
+            <a href="#">第10週 (01 Nov - 05 Nov)</a>
+            <a href="#">第11週 (10 Nov - 11 Nov)</a>
+            <a href="#">第12週 (23 Nov - 26 Nov)</a>
+            <a href="#">第13週 (30 Nov - 02 Dec)</a>
+            <a href="week14.html">第14週 (03 Dec - 05 Dec)</a>
+            <a href="#">第15週 (07 Dec - 09 Dec)</a>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="table-container">
     <table border="1">
       <tr>
