@@ -1,192 +1,131 @@
 <html lang="{{ site.lang | default: 'en-US' }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
+  {% include head-custom.html %}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-      .wrapper {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        position: relative;
-      }
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
 
-      /* Adjust layout for logo and menu */
-      .header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        position: relative;
-        padding: 20px;
-      }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      padding: 20px;
+    }
 
-      .header-left {
-        text-align: center;
-        flex: 1;
-      }
-      
-      .header-left img {
-        display: block;
-        max-width: 150px; /* Adjust the width */
-        max-height: 100px; /* Adjust the height */
-        margin: 0 auto 20px;
-      }
+    .header-left {
+      text-align: center;
+      flex: 1;
+    }
 
-      .menu {
-        position: relative;
-        flex: 1;
-        text-align: right;
-      }
+    .header-left img {
+      display: block;
+      max-width: 150px;
+      max-height: 100px;
+      margin: 0 auto 20px;
+    }
 
-      .dropdown {
-        margin-bottom: 20px;
-      }
+    .menu {
+      position: relative;
+      flex: 1;
+      text-align: right;
+    }
 
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 10px;
-      }
+    .content {
+      text-align: center;
+      max-width: 800px;
+      margin-top: 150px;
+    }
 
-      .social-icons img {
-        width: 24px;
-        height: 24px;
-      }
-
-      .content {
-        text-align: center;
-        max-width: 800px;
-        margin-top: 150px;
-      }
-
-      footer {
-        width: 100%;
-        background-color: #f8f8f8;
-        text-align: center;
-        font-size: 0.9em;
-        color: #666;
-        padding: 10px 0;
-        margin-top: auto;
-        border-top: 1px solid #ddd;
-      }
-
-      /* Dropdown menu styling */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        z-index: 1;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">
-        <!-- 左側：Logo -->
-        <div class="header-left">
-          {% if site.logo %}
-            <img src="{{ '/assets/logo/God.png' | relative_url }}" alt="Logo" />
-          {% endif %}
-          <!-- 社交媒體圖標 -->
-          <div class="social-icons">
-            <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-              <img src="{{ '/assets/Icon/YT.png' | relative_url }}" alt="YouTube" />
-            </a>
-            <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-              <img src="{{ '/assets/Icon/IG.png' | relative_url }}" alt="Instagram" />
-            </a>
-            <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-              <img src="{{ '/assets/Icon/TD.png' | relative_url }}" alt="Threads" />
-            </a>
-            <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-              <img src="{{ '/assets/Icon/FB.png' | relative_url }}" alt="Facebook" />
-            </a>
-          </div>
-        </div>
-
-        <!-- 頁面內容 -->
-        <div class="menu">
-          <h2>選擇周數</h2>
-          <div class="dropdown" aria-label="各周賽程及預測">
-            <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
-            <div class="dropdown-content" role="menu">
-              <a href="#" onclick="showContent(5)" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
-              <a href="#" onclick="showContent(6)" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
-              <a href="#" onclick="showContent(7)" role="menuitem">第7周 (05 Oct - 07 Oct)</a>
-              <a href="#" onclick="showContent(8)" role="menuitem">第8周 (19 Oct - 22 Oct)</a>
-              <a href="#" onclick="showContent(9)" role="menuitem">第9周 (26 Oct - 28 Oct)</a>
-              <a href="#" onclick="showContent(10)" role="menuitem">第10周 (01 Nov - 05 Nov)</a>
-              <a href="#" onclick="showContent(11)" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
-              <a href="#" onclick="showContent(12)" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
-              <a href="#" onclick="showContent(13)" role="menuitem">第13周 (30 Nov - 02 Dec)</a>
-              <a href="week14.html" role="menuitem">第14週 (03 Dec - 05 Dec)</a>
-              <a href="#" onclick="showContent(15)" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
-              <a href="#" onclick="showContent(16)" role="menuitem">第16周 (14 Dec - 16 Dec)</a>
-              <a href="#" onclick="showContent(17)" role="menuitem">第17周 (21 Dec - 22 Dec)</a>
-            </div>
-          </div>
+    footer {
+      width: 100%;
+      background-color: #f8f8f8;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      padding: 10px 0;
+      margin-top: auto;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <!-- 左側：Logo -->
+      <div class="header-left">
+        {% if site.logo %}
+          <img src="{{ '/assets/logo/God.png' | relative_url }}" alt="Logo" />
+        {% endif %}
+        <!-- 社交媒體圖標 -->
+        <div class="social-icons">
+          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+            <img src="{{ '/assets/Icon/YT.png' | relative_url }}" alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+            <img src="{{ '/assets/Icon/IG.png' | relative_url }}" alt="Instagram" />
+          </a>
+          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+            <img src="{{ '/assets/Icon/TD.png' | relative_url }}" alt="Threads" />
+          </a>
+          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+            <img src="{{ '/assets/Icon/FB.png' | relative_url }}" alt="Facebook" />
+          </a>
         </div>
       </div>
 
-      <div class="content">
-        <h1>精準足球賽事預測與分析</h1>
-        <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
-        <ul>
-          <li>詳細的比賽數據趨勢</li>
-          <li>專家級的賽果預測</li>
-          <li>實時更新的球隊表現指標</li>
-        </ul>
-        <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
-      </div>
-
+      <!-- Insert external menu here -->
+      <div class="menu" id="menu-container"></div>
     </div>
 
-    <footer>
-      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-    </footer>
+    <div class="content">
+      <h1>精準足球賽事預測與分析</h1>
+      <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
+      <ul>
+        <li>詳細的比賽數據趨勢</li>
+        <li>專家級的賽果預測</li>
+        <li>實時更新的球隊表現指標</li>
+      </ul>
+      <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
+    </div>
+  </div>
 
-    <script>
-      function showContent(week) {
-        console.log(`Displaying content for week ${week}`);
-        // Implement content switching logic here.
-      }
-    </script>
-  </body>
+  <footer>
+    <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+  </footer>
+
+  <script>
+    // Load menu.html dynamically
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading menu:', error));
+  </script>
+</body>
 </html>
