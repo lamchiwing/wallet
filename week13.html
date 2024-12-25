@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第14週</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-left img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 20px auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    @media only screen and (max-width: 768px) {
+      /* iPad landscape */
+      .wrapper {
+        padding: 10px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .menu {
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      th, td {
+        font-size: 14px;
+        padding: 6px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      /* iPhone */
+      .wrapper {
+        padding: 10px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-left img {
+        max-width: 100px;
+      }
+
+      .menu {
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      th, td {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      /* Computer screens */
+      .wrapper {
+        padding: 40px;
+      }
+
+      .header {
+        padding: 20px 40px;
+      }
+
+      .header-left img {
+        max-width: 200px;
+      }
+
+      th, td {
+        font-size: 16px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-left">
+        <img src="assets/logo/God.png" alt="Logo">
+      </div>
+      <div class="menu">
+        <div class="dropdown">
+          <button>各周賽程及預測</button>
+          <div class="dropdown-content">
+            <a href="#">第5週 (21 Sep - 23 Sep)</a>
+            <a href="#">第6週 (28 Sep - 01 Oct)</a>
+            <a href="#">第7週 (05 Oct - 07 Oct)</a>
+            <a href="#">第8週 (19 Oct - 22 Oct)</a>
+            <a href="#">第9週 (26 Oct - 28 Oct)</a>
+            <a href="#">第10週 (01 Nov - 05 Nov)</a>
+            <a href="#">第11週 (10 Nov - 11 Nov)</a>
+            <a href="#">第12週 (23 Nov - 26 Nov)</a>
+            <a href="#">第13週 (30 Nov - 02 Dec)</a>
+            <a href="week14.html">第14週 (03 Dec - 05 Dec)</a>
+            <a href="#">第15週 (07 Dec - 09 Dec)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="table-container">
+    <table border="1">
+      <tr>
+        <th>週數</th>
+        <th>當地比賽日期及時間</th>
+        <th>主隊</th>
+        <th>客隊</th>
+        <th>預測賽果</th>
+        <th>勝出隊伍</th>
+        <th>入球大細：細  >2.5球< 大</th>
+        <th>主隊賽果</th>
+        <th>客隊賽果</th>
+        <th>場地</th>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-04</td>
+        <td>葉士域治</td>
+        <td>水晶宮</td>
+        <td>查看預測賽果</td>
+        <td>水晶宮</td>
+        <td>細</td>
+        <td>0</td>
+        <td>1</td>
+        <td>樸文路球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-04</td>
+        <td>李斯特城</td>
+        <td>韋斯咸</td>
+        <td>查看預測賽果</td>
+        <td>李斯特城</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>王權球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>愛華頓</td>
+        <td>狼隊</td>
+        <td>查看預測賽果</td>
+        <td>愛華頓</td>
+        <td>大</td>
+        <td>4</td>
+        <td>0</td>
+        <td>葛迪遜公園球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>曼城</td>
+        <td>諾定咸森林</td>
+        <td><a href="https://www.youtube.com/watch?v=gcwEx5pErQs" target="_blank">查看預測賽果</a></td>
+        <td>曼城</td>
+        <td>大</td>
+        <td>3</td>
+        <td>0</td>
+        <td>伊蒂哈德球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>紐卡素</td>
+        <td>利物浦</td>
+        <td><a href="https://www.youtube.com/watch?v=nab9Qgfjyo0" target="_blank">查看預測賽果</a></td>
+        <td>和</td>
+        <td>大</td>
+        <td>3</td>
+        <td>3</td>
+        <td>聖占士公園球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>修咸頓</td>
+        <td>車路士</td>
+        <td><a href="https://youtu.be/n5LI84OLi7U?si=rUVyFaUSvEaeThfN" target="_blank">查看預測賽果</a></td>
+        <td>車路士</td>
+        <td>大</td>
+        <td>1</td>
+        <td>5</td>
+        <td>聖瑪麗體育場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>阿仙奴</td>
+        <td>曼聯</td>
+        <td><a href="https://www.youtube.com/watch?v=49o4MIbNpf0" target="_blank">查看預測賽果</a></td>
+        <td>阿仙奴</td>
+        <td>細</td>
+        <td>2</td>
+        <td>0</td>
+        <td>酋長球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-05</td>
+        <td>阿士東維拉</td>
+        <td>賓福特</td>
+        <td>查看預測賽果</td>
+        <td>阿士東維拉</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>維拉公園球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-06</td>
+        <td>富咸</td>
+        <td>白禮頓</td>
+        <td>查看預測賽果</td>
+        <td>富咸</td>
+        <td>大</td>
+        <td>3</td>
+        <td>1</td>
+        <td>卡雲農舍球場</td>
+      </tr>
+      <tr>
+        <td>第14週</td>
+        <td>2024-12-06</td>
+        <td>般尼茅夫</td>
+        <td>熱刺</td>
+        <td>查看預測賽果</td>
+        <td>般尼茅夫</td>
+        <td>細</td>
+        <td>1</td>
+        <td>0</td>
+        <td>活力球場</td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+</html>
+  
