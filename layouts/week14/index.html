@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-HK">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第14週</title>
   <style>
     table {
       border-collapse: collapse;
@@ -179,12 +182,5 @@
     </table>
   </div>
 
-  <small>{{ page.date | date: "%-d %B %Y" }}</small>
-  <h1>{{ page.title }}</h1>
-  <p class="view">by {{ page.author | default: site.author }}</p>
-  {{content}}
-  {% if page.tags %}
-    <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-  {% endif %}
 </body>
 </html>
