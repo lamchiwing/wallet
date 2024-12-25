@@ -1,19 +1,51 @@
-<div class="menu">
-  <h2>選擇周數</h2>
-  <div class="dropdown" aria-label="各周賽程及預測">
-    <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
-    <div class="dropdown-content" role="menu">
-      <a href="week5.html" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
-      <a href="week6.html" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
-      <a href="week7.html" role="menuitem">第7周 (05 Oct - 07 Oct)</a>
-      <a href="week8.html" role="menuitem">第8周 (19 Oct - 22 Oct)</a>
-      <a href="week9.html" role="menuitem">第9周 (26 Oct - 28 Oct)</a>
-      <a href="week10.html" role="menuitem">第10周 (01 Nov - 05 Nov)</a>
-      <a href="week11.html" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
-      <a href="week12.html" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
-      <a href="week13.html" role="menuitem">第13周 (30 Nov - 02 Dec)</a>
-      <a href="week14.html" role="menuitem">第14週 (03 Dec - 05 Dec)</a>
-      <a href="week15.html" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
-    </div>
+<div class="dropdown" aria-label="各周賽程及預測">
+  <button aria-haspopup="true" aria-expanded="false">各周賽程及預測</button>
+  <div class="dropdown-content" role="menu">
+    <a href="#" onclick="showContent(5)" role="menuitem">第5周 (21 Sep - 23 Sep)</a>
+    <a href="#" onclick="showContent(6)" role="menuitem">第6周 (28 Sep - 01 Oct)</a>
+    <a href="#" onclick="showContent(7)" role="menuitem">第7周 (05 Oct - 07 Oct)</a>
+    <a href="#" onclick="showContent(8)" role="menuitem">第8周 (19 Oct - 22 Oct)</a>
+    <a href="#" onclick="showContent(9)" role="menuitem">第9周 (26 Oct - 28 Oct)</a>
+    <a href="#" onclick="showContent(10)" role="menuitem">第10周 (01 Nov - 05 Nov)</a>
+    <a href="#" onclick="showContent(11)" role="menuitem">第11周 (10 Nov - 11 Nov)</a>
+    <a href="#" onclick="showContent(12)" role="menuitem">第12周 (23 Nov - 26 Nov)</a>
+    <a href="week14.html" role="menuitem">第13週 (03 Dec - 05 Dec)</a>
+    <a href="week14.html" role="menuitem">第14週 (03 Dec - 05 Dec)</a>
+    <a href="#" onclick="showContent(15)" role="menuitem">第15周 (07 Dec - 09 Dec)</a>
+    <a href="#" onclick="showContent(16)" role="menuitem">第16周 (14 Dec - 16 Dec)</a>
+    <a href="#" onclick="showContent(17)" role="menuitem">第17周 (21 Dec - 22 Dec)</a>
   </div>
 </div>
+
+<style>
+  /* Dropdown menu styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+</style>
+
