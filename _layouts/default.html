@@ -113,6 +113,51 @@
     </div>
   </div>
 
+      <!-- Insert external menu here -->
+      <div class="menu" id="menu-container"></div>
+    </div>
+
+    <div class="content">
+      <h1>Welcome to Our Site</h1>
+      <p>This is the main content area.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Hosted on GitHub Pages &mdash; Theme by XYZ</p>
+  </footer>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // Dynamically load the menu.html file
+    fetch('menu.html')
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+      })
+      .then(data => {
+        // Insert the loaded menu into the menu container
+        document.getElementById('menu-container').innerHTML = data;
+
+        // Initialize dropdown functionality after menu is loaded
+        $(document).ready(function () {
+          $('.dropdown').hover(
+            function () {
+              $(this).find('.dropdown-content').stop(true, true).slideDown('fast');
+            },
+            function () {
+              $(this).find('.dropdown-content').stop(true, true).slideUp('fast');
+            }
+          );
+        });
+      })
+      .catch(error => console.error('Error loading menu:', error));
+  </script>
+</body>
+</html>
+
   <footer>
     <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
     <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
