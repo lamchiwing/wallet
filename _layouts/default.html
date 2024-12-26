@@ -1,4 +1,5 @@
-<html lang="{{ site.lang | default: 'en-US' }}">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'zh-HK' }}">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,10 +7,11 @@
 
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   <![endif]-->
-  {% include head-custom.html %}
+
   <style>
     body {
       margin: 0;
@@ -19,129 +21,120 @@
       min-height: 100vh;
     }
 
-    .wrapper {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      position: relative;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
+    header, footer {
       width: 100%;
-      position: relative;
+      text-align: center;
       padding: 20px;
+      background-color: #f8f8f8;
     }
 
     .header-left {
       text-align: center;
-      flex: 1;
+      margin-bottom: 20px;
     }
 
     .header-left img {
       display: block;
       max-width: 150px;
-      max-height: 100px;
-      margin: 0 auto 20px;
+      margin: 0 auto;
     }
 
-    .menu {
-      position: relative;
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    nav {
+      background-color: #ddd;
+      padding: 10px 0;
+    }
+
+    main {
       flex: 1;
-      text-align: right;
+      text-align: center;
+      padding: 20px;
     }
 
-    .content {
-      text-align: center;
+    main h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    main ul {
+      list-style: disc;
+      text-align: left;
       max-width: 800px;
-      margin-top: 150px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
-    footer {
-      width: 100%;
-      background-color: #f8f8f8;
-      text-align: center;
+    footer p {
       font-size: 0.9em;
       color: #666;
-      padding: 10px 0;
-      margin-top: auto;
-      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="header">
-      <!-- 左側：Logo -->
-      <div class="header-left">
-        {% if site.logo %}
-          <img src="{{ '/assets/logo/God.png' | relative_url }}" alt="Logo" />
-        {% endif %}
-        <!-- 社交媒體圖標 -->
-        <div class="social-icons">
-          <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
-            <img src="{{ '/assets/Icon/YT.png' | relative_url }}" alt="YouTube" />
-          </a>
-          <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
-            <img src="{{ '/assets/Icon/IG.png' | relative_url }}" alt="Instagram" />
-          </a>
-          <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-            <img src="{{ '/assets/Icon/TD.png' | relative_url }}" alt="Threads" />
-          </a>
-          <a href="https://www.facebook.com/godsavethewallet" target="_blank">
-            <img src="{{ '/assets/Icon/FB.png' | relative_url }}" alt="Facebook" />
-          </a>
-        </div>
+  <header>
+    <div class="header-left">
+      {% if site.logo %}
+        <img src="{{ '/assets/logo/God.png' | relative_url }}" alt="God Save the Wallet Logo">
+      {% endif %}
+      <div class="social-icons">
+        <a href="https://youtube.com/@godsavethewallet?si=eRZMW7LHS77OFmdY" target="_blank">
+          <img src="{{ '/assets/Icon/YT.png' | relative_url }}" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/godsavethewallet/profilecard/?igsh=MWkzd3Fod2Z2OGhuZw==" target="_blank">
+          <img src="{{ '/assets/Icon/IG.png' | relative_url }}" alt="Instagram">
+        </a>
+        <a href="https://www.threads.net/@godsavethewallet?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+          <img src="{{ '/assets/Icon/TD.png' | relative_url }}" alt="Threads">
+        </a>
+        <a href="https://www.facebook.com/godsavethewallet" target="_blank">
+          <img src="{{ '/assets/Icon/FB.png' | relative_url }}" alt="Facebook">
+        </a>
       </div>
-
-      <!-- Insert external menu here -->
-      <div class="menu" id="menu-container"></div>
     </div>
+    <nav id="menu-container"></nav>
+  </header>
 
-    <div class="content">
+  <main>
+    <section>
       <h1>精準足球賽事預測與分析</h1>
-      <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。無論您是熱愛足球的球迷，還是希望深入了解比賽動態的專業人士，我們的網站都能助您掌握一手資訊！</p>
+      <p>歡迎來到 <strong>精準賽果預測平台</strong>！我們致力於提供全面、專業的足球賽事分析，結合最新數據及趨勢，為您呈現準確的比賽預測與結果解析。</p>
       <ul>
         <li>詳細的比賽數據趨勢</li>
         <li>專家級的賽果預測</li>
         <li>實時更新的球隊表現指標</li>
       </ul>
       <p>現在就開始探索，讓數據帶您預見勝負，提前感受賽場熱血！</p>
-    </div>
-  </div>
-
-      <!-- Insert external menu here -->
-      <div class="menu" id="menu-container"></div>
-    </div>
-
-    <div class="content">
-      <h1>Welcome to Our Site</h1>
-      <p>This is the main content area.</p>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer>
-    <p>Hosted on GitHub Pages &mdash; Theme by XYZ</p>
+    <p>&copy; 2024 God Save the Wallet. All rights reserved.</p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by XYZ</small></p>
   </footer>
 
-  <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
   <script>
-    // Dynamically load the menu.html file
+    // Load menu.html dynamically
     fetch('menu.html')
       .then(response => {
         if (!response.ok) throw new Error('Network response was not ok');
         return response.text();
       })
       .then(data => {
-        // Insert the loaded menu into the menu container
         document.getElementById('menu-container').innerHTML = data;
 
-        // Initialize dropdown functionality after menu is loaded
+        // Initialize dropdown functionality if menu includes dropdowns
         $(document).ready(function () {
           $('.dropdown').hover(
             function () {
@@ -152,23 +145,6 @@
             }
           );
         });
-      })
-      .catch(error => console.error('Error loading menu:', error));
-  </script>
-</body>
-</html>
-
-  <footer>
-    <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-  </footer>
-
-  <script>
-    // Load menu.html dynamically
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
       })
       .catch(error => console.error('Error loading menu:', error));
   </script>
