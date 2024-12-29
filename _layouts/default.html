@@ -126,27 +126,19 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     // Load menu.html dynamically
-    fetch('menu.html')
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
-
-        // Initialize dropdown functionality if menu includes dropdowns
-        $(document).ready(function () {
-          $('.dropdown').hover(
-            function () {
-              $(this).find('.dropdown-content').stop(true, true).slideDown('fast');
-            },
-            function () {
-              $(this).find('.dropdown-content').stop(true, true).slideUp('fast');
-            }
-          );
-        });
-      })
-      .catch(error => console.error('Error loading menu:', error));
+  fetch('menu.html')
+    .then(response => {
+      if (!response.ok) throw new Error('Network response was not ok');
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById('menu-container').innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error loading menu:', error);
+      document.getElementById('menu-container').innerText = 'Menu could not be loaded.';
+    });
+</script>
   </script>
 </body>
 </html>
