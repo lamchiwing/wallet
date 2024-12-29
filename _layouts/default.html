@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'zh-HK' }}">
+<html lang="zh-HK">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% seo %}
+  <title>God Save the Wallet</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
   <!--[if lt IE 9]>
@@ -51,15 +51,25 @@
       height: 24px;
     }
 
-    nav {
-      background-color: #ddd;
-      padding: 10px 0;
+    #menu-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      z-index: 1000;
+      max-width: 200px;
+      overflow-y: auto;
     }
 
     main {
       flex: 1;
       text-align: center;
       padding: 20px;
+      margin-top: 70px; /* Prevent overlap with fixed menu */
     }
 
     main h1 {
@@ -126,19 +136,18 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     // Load menu.html dynamically
-  fetch('menu.html')
-    .then(response => {
-      if (!response.ok) throw new Error('Network response was not ok');
-      return response.text();
-    })
-    .then(data => {
-      document.getElementById('menu-container').innerHTML = data;
-    })
-    .catch(error => {
-      console.error('Error loading menu:', error);
-      document.getElementById('menu-container').innerText = 'Menu could not be loaded.';
-    });
-</script>
+    fetch('menu.html')
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading menu:', error);
+        document.getElementById('menu-container').innerText = 'Menu could not be loaded.';
+      });
   </script>
 </body>
 </html>
